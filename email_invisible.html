@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>reCAPTCHA Mailhide v2: Free Spam Protection</title>
+    <script src='https://www.recaptcha.net/recaptcha/api.js'></script>
+  </head>
+  <body>
+    <form id="show_email" action="email.php" method="post">
+	  <script>
+	  function submitForm() {
+	      document.getElementById("show_email").submit();
+	  }
+	  </script>
+      <button class="g-recaptcha" data-sitekey="<site_key>" data-callback="submitForm" data-badge="inline">Reveal email address</button>	 
+    </form>
+  </body>
+</html>
