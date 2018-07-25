@@ -6,9 +6,9 @@ A replacement of Google's [Mailhide](https://www.google.com/recaptcha/mailhide/d
 ## Usage
 
 1. [Sign up](http://www.google.com/recaptcha/admin) for your own reCAPTCHA key from Google. Both regular and invisible keys are supported.
-2. Replace `<site_key>` in `email.html` (`email_invisible.html` for invisible reCAPTCHA) and `<secret_key>` in `email.php` with your own. 
+2. Replace `<site_key>` in `email.html` (`email_invisible.html` for invisible reCAPTCHA) and `<secret_key>` and `<email>` in `email.php` with your own.
 3. Put `email.html` and `email.php` under the same directory on your website.
-4. Include a link to `email.html` in the web page where your masked email address is shown. See `index.html` for an example.
+4. Include a link to `email.html` in the web page where your masked email address is shown. If an element with id `mailhide` exists, its contents will be replaced by a link to the revealed email address. See `index.html` for an example.
 
 
 ## Notes
